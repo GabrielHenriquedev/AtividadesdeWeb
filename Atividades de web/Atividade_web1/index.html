@@ -7,38 +7,39 @@
     <title>Formulário html</title>
 </head>
 <body>
+    <div class="conteiner">
     <form action="">
         <fieldset>
             <legend>Formulário de inscrição</legend>
             <div class="row">
-                <label for="">Nome: </label>
+                <label for="">Nome </label>
                 <input type="text" placeholder="Nome" required="required">
             </div>
             <div class="row">
-                <label for="">Sobrenome: </label>
+                <label for="">Sobrenome </label>
                 <input type="text" placeholder="Sobrenome" required="required">
             </div>
             <div class="row">
-                <label for="">Idade: </label>
+                <label for="">Idade </label>
                 <input type="number" name="idade" min="18" max="120" placeholder="idade" required="required"  pattern="[0-9]+$" >
             </div>       
             <div class="row">
-                <label for="">Email: </label>
+                <label for="">Email </label>
                 <input type="email" placeholder="Email" required="required">
             </div>
             <div class="sexo">
-                <label for="">Sexo: </label>
+                <label for="">Sexo </label>
                 <input type="radio" value="Feminino" id="feminino" name="Sexo" required="required">
                 <label for="">Feminino</label>
                 <input type="radio" value="Masculino" id="masculino" name="Sexo" required="required">
                 <label for="">Masculino</label>
             </div>
             <div>
-                <label for="">Foto: </label>
+                <label for="">Foto</label>
                 <input type="file" name="myImage" accept="image/x-png,image/jpeg" />
             </div>
             <div>
-                <label for="">País : </label>
+                <label for="">País </label>
                 <select name=Pais>
                     <option value="null" selected></option>
                     <option value="África do Sul">África do Sul</option>
@@ -219,7 +220,7 @@
             </div>
 
             <div>
-                <label for="">Escolha a linguagem de preferencia: </label>
+                <label for="">Escolha a linguagem de preferencia </label>
                 <select id="Programacao" multiple="multiple" size="3" style="width: 50px;" >
                 <option value="PHP">PHP</option>
                 <option value="Java">Java</option>
@@ -230,7 +231,7 @@
             <label for="">(segure CTRL para selecionar mais de uma linguagem)</label>
             </div>
             <div>
-                <label for="">Áreas de atuação: </label>
+                <label for="">Áreas de atuação </label>
                 <input type="checkbox">
                 <label for=""> Computação</label>
                 <input type="checkbox">
@@ -239,14 +240,48 @@
                 <label for="">Pedagogia</label>
             </div>
             
-           <div>
+           <div class="buttons">
                
             <input type="reset"  name="b2" value="Limpar">
             <input type="submit" name="b1" value="Enviar">
            </div>
         </fieldset>
     </form>
-    
+    </div>
 
+    <style>
+        label{
+        display: inline-block;
+        width: 120px;
+        }
+    
+    
+    .conteiner{
+        background-color: #FFF;
+        width: 720px;
+        padding: 20px;
+        margin: 20px auto 0 auto;
+        box-shadow: 0px 6px 10px;
+        border-radius: 5px;
+    }
+    .buttons {
+        text-align: center;
+    }
+
+    body {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    }
+    
+    fieldset {
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-color: #c2cbce;
+        box-shadow: 2px 2px 2px #c2cbce;
+    }
+    
+    
+    </style>
 </body>
 </html>
